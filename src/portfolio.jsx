@@ -9,7 +9,7 @@ const CONFIG = {
   tagline: "Fresh Graduate yang Senang Belajar Hal Baru",
   about: `Fresh Graduate Sistem Informasi dengan kemampuan dasar pengembangan web menggunakan PHP. Memiliki minat pada software development, problem solving, dan pembuatan aplikasi yang efisien serta mudah digunakan. Cepat belajar, adaptif terhadap teknologi baru, dan memiliki motivasi tinggi untuk terus mengembangkan keterampilan di bidang IT dan pengembangan aplikasi.`,
   email: "hendrixie45@email.com",
-  github: "https://github.com/Cytus2nd",
+  github: "https://github.com/CytusTheBeginner",
   linkedin: "https://www.linkedin.com/in/hendri-xie-464004285/",
   cv: "#", // ganti dengan link CV / Google Drive
   skills: [
@@ -23,22 +23,22 @@ const CONFIG = {
   title: "Aplikasi Kas Organisasi SMA Maitreyawira Tanjungpinang",
   desc: "Aplikasi pengelolaan kas organisasi sekolah yang membantu pencatatan pemasukan, pengeluaran, saldo kas, serta pembuatan laporan keuangan secara terstruktur dan mudah diakses.",
   stack: ["PHP", "MySQL", "Bootstrap", "JavaScript"],
-  repo: "#",
+  repo: "https://github.com/Cytus2nd/AppKasOrganisasi_SMAMW",
   year: "2024",
 },
 {
   title: "Sistem Pendukung Keputusan Stok Barang Minimarket Gajah Mart",
   desc: "Sistem pendukung keputusan yang membantu menentukan jumlah stok barang yang perlu disediakan berdasarkan data penjualan dan kriteria tertentu untuk mengurangi risiko kehabisan atau penumpukan stok.",
   stack: ["PHP", "MySQL", "Bootstrap", "JavaScript"],
-  repo: "#",
-  year: "2024",
+  repo: "https://github.com/CytusTheBeginner/SPK_GajahMart",
+  year: "2025",
 },
 {
   title: "Aplikasi Manajemen Proyek Sederhana",
   desc: "Aplikasi berbasis web untuk membantu pengelolaan proyek, pembagian tugas, pemantauan progres pekerjaan, serta pencatatan status penyelesaian setiap tugas.",
   stack: ["PHP", "MySQL", "Bootstrap", "JavaScript"],
-  repo: "#",
-  year: "2023",
+  repo: "https://github.com/Cytus2nd/project_app",
+  year: "2024",
 },
 {
   title: "Clone Website Perusahaan Wiraraja Batam Menggunakan Python Django",
@@ -51,29 +51,29 @@ const CONFIG = {
   title: "Pengembangan Bot Discord dengan Vibe Coding Menggunakan Python",
   desc: "Pembuatan Bot Discord menggunakan Python dengan bantuan AI ChatGPT ",
   stack: ["Python", "MySql"],
-  repo: "#",
-  year: "2023",
+  repo: "https://github.com/CytusTheBeginner/bot-mancing-discord",
+  year: "2026",
 },
 {
   title: "Clone Website Tokopedia Sederhana (Fokus pada Cetak Invoice)",
   desc: "Melakukan Clone website Tokopedia secara sederhana yang berfokus pada percetakan invoice",
   stack: ["PHP", "MySQL", "Bootstrap", "HTML", "JavaScript"],
-  repo: "#",
-  year: "2023",
+  repo: "https://github.com/Cytus2nd/tungpedi",
+  year: "2024",
 },
 {
   title: "Prototype Aplikasi Mobile E-Commerce Toko Cahaya Lestari (Figma)",
   desc: "Prototype antarmuka aplikasi e-commerce untuk penjualan produk lampu dan elektronik yang dirancang menggunakan Figma, mencakup halaman katalog produk, detail produk, keranjang belanja, dsb dengan fokus pada pengalaman pengguna.",
   stack: ["Figma", "UI Design", "UX Design", "Prototyping"],
-  repo: "#",
+  repo: "https://www.figma.com/proto/1qb7d9ximzL1vqZ5K4xNMN/Cahaya-Lestari-APP-Mobile?node-id=0-1&t=TcPtMslimK7sawII-1",
   year: "2023",
 },
 {
   title: "Prototype Aplikasi E-Commerce Rotanku (Figma)",
   desc: "Prototype antarmuka aplikasi e-commerce untuk penjualan produk rotan yang dirancang menggunakan Figma, mencakup halaman katalog produk, detail produk, keranjang belanja, dan proses checkout dengan fokus pada pengalaman pengguna.",
   stack: ["Figma", "UI Design", "UX Design", "Prototyping"],
-  repo: "#",
-  year: "2023",
+  repo: "https://www.figma.com/proto/s4JQQNKy9ZCqIQGmZ07C5K/IMK-UAS--MARKETPLACE-HANDMADE-?node-id=150-3908&starting-point-node-id=150%3A3908",
+  year: "2024",
 }
   ],
   experience: [
@@ -544,10 +544,16 @@ export default function Portfolio() {
           <SectionLabel label="Proyek" />
           <h2 style={headingStyle}>Yang pernah saya bangun</h2>
           <div className="grid-2col">
-            {CONFIG.projects.map((project, i) => (
-              <ProjectCard key={project.title} project={project} index={i} />
-            ))}
-          </div>
+  {[...CONFIG.projects]
+    .sort((a, b) => b.year - a.year) // terbaru ke terlama
+    .map((project, i) => (
+      <ProjectCard
+        key={project.title}
+        project={project}
+        index={i}
+      />
+    ))}
+</div>
         </section>
  
         {/* EXPERIENCE */}
