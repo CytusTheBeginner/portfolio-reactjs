@@ -44,8 +44,8 @@ const CONFIG = {
   title: "Clone Website Perusahaan Wiraraja Batam Menggunakan Python Django",
   desc: "Clone Website Wiraraja Batam menggunakan Python Django dan Bootstrap, Clone ini berfokus pada frontend website",
   stack: ["Django", "Sqlite", "Bootstrap", "Python"],
-  repo: "#",
-  year: "2023",
+  repo: "https://github.com/Cytus2nd/wiraraja-django",
+  year: "2024",
 },
 {
   title: "Pengembangan Bot Discord dengan Vibe Coding Menggunakan Python",
@@ -73,7 +73,7 @@ const CONFIG = {
   desc: "Prototype antarmuka aplikasi e-commerce untuk penjualan produk rotan yang dirancang menggunakan Figma, mencakup halaman katalog produk, detail produk, keranjang belanja, dan proses checkout dengan fokus pada pengalaman pengguna.",
   stack: ["Figma", "UI Design", "UX Design", "Prototyping"],
   repo: "https://www.figma.com/proto/s4JQQNKy9ZCqIQGmZ07C5K/IMK-UAS--MARKETPLACE-HANDMADE-?node-id=150-3908&starting-point-node-id=150%3A3908",
-  year: "2024",
+  year: "2023",
 }
   ],
   experience: [
