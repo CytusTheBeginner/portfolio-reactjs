@@ -11,7 +11,7 @@ const CONFIG = {
   email: "hendrixie45@email.com",
   github: "https://github.com/CytusTheBeginner",
   linkedin: "https://www.linkedin.com/in/hendri-xie-464004285/",
-  cv: "#", // ganti dengan link CV / Google Drive
+  cv: "https://drive.google.com/drive/folders/1Cw88Yv-thZ6VhCUe9Y1wkvALxBJa5x8b?usp=sharing", 
   skills: [
     { cat: "Frontend", items: ["HTML", "CSS", "Javascript"] },
     { cat: "Backend", items: ["PHP", "Laravel", "MySql"] },
